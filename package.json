@@ -5,5 +5,9 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-ts": "^1.12.1",
     "typescript": "^1.6.0-beta"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "underscore": "^1.8.3"
   }
 }
