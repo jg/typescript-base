@@ -11,7 +11,7 @@ module.exports = function (grunt) {
                 options: {
                     module: 'commonjs',
                     target: 'es5',
-                    compiler: '/usr/bin/tsc'
+                    compiler: './node_modules/typescript/bin/tsc'
                 }
             }
         },
@@ -22,5 +22,5 @@ module.exports = function (grunt) {
             }
         }
     });
-    grunt.registerTask('default', 'watch');
+  grunt.registerTask('default', ['ts:build', 'watch']);
 };
